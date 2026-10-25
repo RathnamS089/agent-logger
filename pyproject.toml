@@ -1,0 +1,21 @@
+[project]
+name = "agent-logger"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "unheardpika", email = "unheardpika089@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "discord-py>=2.7.1",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agent-logger = "agent_logger.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
